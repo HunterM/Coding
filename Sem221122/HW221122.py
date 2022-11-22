@@ -35,11 +35,11 @@
 # ¬ - Отрицание ⋁ - логическое "Или" ⋀ - логическое "И"
 
 print ('Введите число Х')
-X3 = int(input())
+X3 = bool(input())
 print ('Введите число Y')
-Y3 = int(input())
+Y3 = bool(input())
 print ('Введите число Z')
-Z3 = int(input())
+Z3 = bool(input()) 
 if not (X3 or Y3 or Z3) == (not X3 and not Y3 and not Z3): 
     print ('Выражение истинно')
 else:
