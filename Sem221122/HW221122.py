@@ -34,19 +34,30 @@
 # всех значений предикат. 
 # ¬ - Отрицание ⋁ - логическое "Или" ⋀ - логическое "И"
 
-print ('Введите число Х')
-X3 = bool(input())
-print ('Введите число Y')
-Y3 = bool(input())
-print ('Введите число Z')
-Z3 = bool(input()) 
-if not (X3 or Y3 or Z3) == (not X3 and not Y3 and not Z3): 
-    print ('Выражение истинно')
-else:
-    print('Выражение ложно')
-print()
+# print ('Введите число Х')
+# X3 = bool(input())
+# print ('Введите число Y')
+# Y3 = bool(input())
+# print ('Введите число Z')
+# Z3 = bool(input()) 
+# if not (X3 or Y3 or Z3) == (not X3 and not Y3 and not Z3): 
+#     print ('Выражение истинно')
+# else:
+#     print('Выражение ложно')
+# print()
 
+# #или можно сделать такой код
 
+# xp = [True, False]
+# yp = [True, False]
+# zp = [True, False]
+# for x in xp:
+#     for y in yp:
+#         for z in zp:
+#             print (x, y, z)
+#             res1 = not(x or y or z)
+#             res2 = (not x) and (not y) and (not z)
+#             print(res1 == res2)
 
 
 # # 3. Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и
@@ -92,6 +103,11 @@ print()
 
 print()
 
+# #решение со словарем
+# a = int(input())
+# d = {1: 'x>0 y>0', 2: 'x<0 y>0', 3: 'x<0 y<0', 4: 'x>0 y<0'} #это словарь
+# print(d[a])
+# print()
 
 # 5. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
 # Пример:
