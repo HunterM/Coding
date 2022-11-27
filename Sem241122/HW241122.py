@@ -1,21 +1,20 @@
 # 1. Напишите программу, которая принимает на
-# вход вещественное число и показывает сумму 
+# вход вещественное число и показывает сумму
 # его цифр.
 # Пример:
 # - 6782 -> 23
 # - 0,56 -> 11
 
-print('Введите вещественное число:\n')
-number =  float(input())
-str1=str(number)
-print(str1)
-sum=0
-for element in str1:
-    if element.isdigit():
-        sum += int(element)
-        print(element)
-print("Сумма цифр равна: " ,sum)
-
+# print('Введите вещественное число:\n')
+# number =  float(input())
+# str1=str(number)
+# print(str1)
+# sum=0
+# for element in str1:
+#     if element.isdigit():
+#         sum += int(element)
+#         print(element)
+# print("Сумма цифр равна: " ,sum)
 
 
 # 2. Напишите программу, которая принимает на
@@ -36,8 +35,7 @@ print("Сумма цифр равна: " ,sum)
 # print()
 
 
-
-# 3. Задайте список из n чисел последовательности (1+1/n)^n 
+# 3. Задайте список из n чисел последовательности (1+1/n)^n
 # и выведите на экран их сумму.
 # Пример:
 # - Для n = 6: [2.0, 2.25, 2.37037037037037, 2.44140625, 2.4883199999999994, 2.5216263717421135]
@@ -49,44 +47,57 @@ print("Сумма цифр равна: " ,sum)
 #     print(sum(lst), end=" ")
 # print()
 
-# 4. Задайте список из N элементов, заполненных числами из промежутка 
-# [-N, N]. Найдите произведение элементов на указанных позициях. 
+# 4. Задайте список из N элементов, заполненных числами из промежутка
+# [-N, N]. Найдите произведение элементов на указанных позициях.
 # Позиции хранятся в файле file.txt в одной строке одно число.
-# (для продвинутых - с файлом, вариант минимум - 
+# (для продвинутых - с файлом, вариант минимум -
 # ввести позиции в консоли)
 #  -2 -1 0 1 2 Позиции: 0,1 -> 2
 
 # path = 'THW241122.txt'
 # data = open(path, 'r')
 # for line in data:
-#     print(line)
+#     print(line) #занести в список
 # data.close()
-# exit()
+# # exit()
 
-# print("Введите число N")
-# print()
-# n1 = int(input())
-# str3 = list(range(- n1, n1+1))
-# s = len(str3)
-# proiz = 0
-# print(str3)
-# print(len(str3))
-# print("Введите позиции для подсчета из диапазона от 0 до", s-1)
+
+print("Введите число N")
+print()
+n1 = int(input())
+str3 = list(range(- n1, n1+1))
+s = len(str3)
+proiz = 0
+print(str3)
+print(len(str3))
+print("Введите позиции для подсчета из диапазона от 0 до", s-1)
+
+a = list(map(int, input().split()))
+print(a)
 # poz1 = int(input())
 # poz2 = int(input())
 
+for i in range(0, s-1):
+    if s < a[i] or a[i] < 0 or 0 > a[i] or a[i] > s:
+        print("Элементы вне допустимого диапазона")
+    # elif poz1 > 0 or poz1 < s or poz2 < s and poz2 > 0:
+    #     proiz = str3[poz1]*str3[poz2]
+    #     print('Результат равен: ', proiz)
+    #     break
+
 
 # for i in range(0, s-1):
-#     if s<poz1 or poz1<0 or 0>poz2 or poz2>s:
+#     if s < poz1 or poz1 < 0 or 0 > poz2 or poz2 > s:
 #         print("Элементы вне допустимого диапазона")
-#     elif poz1>0 or poz1<s or poz2<s and poz2>0:
+#     elif poz1 > 0 or poz1 < s or poz2 < s and poz2 > 0:
 #         proiz = str3[poz1]*str3[poz2]
 #         print('Результат равен: ', proiz)
 #         break
 
+
 # 5.Реализуйте алгоритм перемешивания списка.
 
-# import random 
-# listRandom = ['a', 'b', 'c', 'd', 'e'] 
-# random.shuffle(listRandom) 
+# import random
+# listRandom = ['a', 'b', 'c', 'd', 'e']
+# random.shuffle(listRandom)
 # print(listRandom)
