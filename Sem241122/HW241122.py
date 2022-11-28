@@ -23,6 +23,23 @@
 # Пример:
 # - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
+# import math
+
+# def mult(n: int) -> str:
+
+#     str_mult = '1'
+#     for i in range(2, n+1):
+#         if i ==n:
+#             str_mult += f'*(i)'
+#         else:
+#             str_mult += f'*(i)'
+#         return
+
+# n = int(input('Num:'))
+# multiplications = 
+
+###############################################
+
 
 # print("Введите число N")
 # print()
@@ -62,24 +79,28 @@
 # # exit()
 
 
-print("Введите число N")
-print()
-n1 = int(input())
-str3 = list(range(- n1, n1+1))
-s = len(str3)
-proiz = 0
-print(str3)
-print(len(str3))
-print("Введите позиции для подсчета из диапазона от 0 до", s-1)
+# print("Введите число N")
+# print()
+# n1 = int(input())
+# str3 = list(range(- n1, n1+1))
+# s = len(str3)
 
-a = list(map(int, input().split()))
-print(a)
+# print(str3)
+# print(len(str3))
+# print("Введите позиции для подсчета из диапазона от 0 до", s-1)
+
+# a = list(map(int, input().split()))
+# print(a)
+# proiz = 0
+# for i in a:
+#     proiz *= str3[i]
+# print(proiz)
 # poz1 = int(input())
 # poz2 = int(input())
 
-for i in range(0, s-1):
-    if s < a[i] or a[i] < 0 or 0 > a[i] or a[i] > s:
-        print("Элементы вне допустимого диапазона")
+# for i in range(0, s-1):
+#     if s < a[i] or a[i] < 0 or 0 > a[i] or a[i] > s:
+#         print("Элементы вне допустимого диапазона")
     # elif poz1 > 0 or poz1 < s or poz2 < s and poz2 > 0:
     #     proiz = str3[poz1]*str3[poz2]
     #     print('Результат равен: ', proiz)
