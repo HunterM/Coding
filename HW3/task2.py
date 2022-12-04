@@ -4,7 +4,7 @@
 # второй и предпоследний и т.д.
 
 import numpy as np 
-lst1 = np.random.randint(0, 10, 5)
+lst1 = np.random.randint(0, 10, 5).tolist()
 print(lst1)
 
 
@@ -17,4 +17,4 @@ def proizved(nums: list) -> int:
     return newlist
 
 
-print(proizved([lst1]))
+print(proizved(lst1))
