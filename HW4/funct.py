@@ -10,10 +10,10 @@ def create_polinom(k: int, simple: bool = True) -> str:
         polinom += f'{rnd(0,2)}*x**{i}+'
         if i == 0:
             polinom += f'{rnd(0,100)}*x**{i}'
-        if simple:
-            return str(sympy.simplify(polinom))
-        else:
-            return str(polinom)
+    if simple:
+        return str(sympy.simplify(polinom))
+    else:
+        return str(polinom)
 
 def create_polinom_file(polinom: str, filename: str = 'new'):
     """"Записывает в полином файл, дополнительно можно указать имя файла
