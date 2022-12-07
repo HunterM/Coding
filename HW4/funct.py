@@ -18,5 +18,5 @@ def create_polinom(k: int, simple: bool = True) -> str:
 def create_polinom_file(polinom: str, filename: str = 'new'):
     """"Записывает в полином файл, дополнительно можно указать имя файла
     и путь к этому файлу"""
-    with open(f'hw4/{filename}.txt', 'w') as f:
+    with open(f'coding/HW4/{filename}.txt', 'w') as f:
         f.write(polinom)
