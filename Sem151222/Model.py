@@ -56,7 +56,7 @@ def read_stroka():
     with open('Coding\Sem151222\LecFile.csv', 'r') as f:
             for i in f:
                 my_lines.append(i.split(';'))
-    print(my_lines)
+    # print(my_lines)
 
 start()
 
