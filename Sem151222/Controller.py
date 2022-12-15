@@ -15,10 +15,13 @@ def run ( ):
             result = Model.serchcontact(base, contact)
             view.show_found(result)
         elif mod =='3': # редактирование контакта
-            contact = view.contact_edit()
+            contact = view.contact_to_s()
             base = LoggerNew.getbase()
             result = Model.serchcontact(base, contact)
-            base = LoggerNew.update_base()
+            view.show_found(result)
+            result = Model.edit_str(base, result)
+
+
         elif mod =='4': # удаление контакта
             contact = view.contact_to_s()
             base = LoggerNew.getbase()
