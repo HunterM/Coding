@@ -7,6 +7,6 @@ def find_contacts(base, stroka):
         if stroka in i:
             return i
 
-base = [['1','2','3'],['4','5','6']]
+# base = [['1','2','3'],['4','5','6']]
 
-print(edit_str(base, find_contacts(base, '1')))
+# print(edit_str(base, find_contacts(base, '1')))

@@ -6,3 +6,6 @@
 # Продумать схему приложения, реализовать controller + пару методов
 
 
+import Controller
+
+Controller.run()

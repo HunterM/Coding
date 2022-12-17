@@ -45,9 +45,9 @@ def newMass(base, result):
     return base
 
 
-def edit_str(base, result):
-    base[base[base.index(result)].index(input('Введите элемент который хотите заменить'))] = input(f'Введите новое значение: ') #base.index вщзвращает результат
-    return base
+# def edit_str(base, result):
+#     base[base[base.index(result)].index(input('Введите элемент который хотите заменить'))] = input(f'Введите новое значение: ') #base.index вщзвращает результат
+#     return base
 
 
 
@@ -57,6 +57,17 @@ def read_stroka():
             for i in f:
                 my_lines.append(i.split(';'))
     # print(my_lines)
+
+    
+def edit_str(base, result):
+    base[base.index(result)][base[base.index(result)].index(input('Введите элемент который хотите заменить'))] = input(f'Введите новое значение: ') #base.index вщзвращает результат
+    return base
+
+def find_contacts(base, stroka):
+    for i in base:
+        if stroka in i:
+            return i
+
 
 start()
 
