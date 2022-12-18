@@ -1,0 +1,8 @@
+
+None
+None
+David || Girniy || Girniy@mail.ru || cliner
+Andrey || Cheb || Cheb@gmail.com || manager
+John || Simpson || Simpson@gmail.com || CEO
+Mark || Anderson || Anderson@gmail.com || manager
+Natasha || Sherbakova || Sherbakova@mail.ru || Student
