@@ -1,6 +1,7 @@
 import os
 import random
 import model
+import json
 from os import system
 system("cls")
 
@@ -27,6 +28,11 @@ file.close()
 def contact_to_s():
     return input('Введите информацию для поиска')
 
+def create_id(base):
+    if len(base.split('\n')) == 0:
+        return 1
+    else:
+        return int(base.split('\n'[len(base.split('\n'))-1].split('||'[0])))+1
 
 # def start():    
 #     for i in range(100):
@@ -39,6 +45,8 @@ def showcontact(position):
         show += str(i) + " "
     print(show)
 
+def retrivecontact(base):
+    base = base.lower()
 
 def findcontact(base, contact):
     base = base.split('\n')
@@ -52,14 +60,26 @@ def findcontact(base, contact):
         results.append(f'Контакт |{contact}| не найден')
     return results
 
+def edit_emloyer(base, contact, new_emloyer):
+    base = base.split('\n')
+    id = contact_to_s.split('||')[0]
+    base[base.index(contact)] = id + '||' + new_emloyer
+    return base
 
-# def deletecontact(base):
-#     findcontact(base)
-#     findid = input('Введите id контакта к удалению: ')
-#     for contact in base:
-#         if findid in contact:
-#             base.remove(contact)
+# def new_employer():
 
+def deletecontact(base):
+    base = base.split('\n')
+    base.remove(result)
+    return base
+
+def update_base(new_info):
+    new_info_csv = [i.split('||')[0] for i in new_info]
+    with open('UsersFile.csv', 'w', encoding='utf-8') as f:
+        writer = csv.writer(f, delimiter=';')
+        writer.writerows(new_info_csv)
+    with open('UserFile.txt', 'w', encoding='utf-8') as book:
+        book.write("\n".join(new_info))
 # def correctcontact(base):
 #     contact_to_s(base)
 #     id = input('Введите id контакта, которое нужно исправить: ')

@@ -17,7 +17,7 @@ def addcontact_new(contact):
             writer.writerows([contact.split(' || ')])
 
 def get_base():
-    with open('UsersFile.txt', 'r', encoding='utf-8') as book:
-        return book.read()
-    # with open('UsersFile.csv', 'r') as f:
+    # with open('UsersFile.txt', 'r', encoding='utf-8') as book:
     #     return book.read()
+    with open('UsersFile.csv', 'r') as f:
+        return f.read()
