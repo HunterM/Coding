@@ -36,13 +36,13 @@ def run ():
             base = logger.get_base()
             result = view.findcontact(base, contact)
             view.showcontact(result)
-        if 'не найден' not in result[0] and len(base.split('\n'))>1:
-            upd = view.deletecontact(base, result)
-            logger.update_base(upd)
-        elif 'не найден' not in result[0]:
-            result = base.split('\n')[0]
-            upd = view.deletecontact(base, result)
-            logger.update_base()
+        # if 'не найден' not in result[0] and len(base.split('\n'))>1:
+        #     upd = view.deletecontact(base, result)
+        #     logger.update_base(upd)
+        # elif 'не найден' not in result[0]:
+        #     result = base.split('\n')[0]
+        #     upd = view.deletecontact(base, result)
+        #     logger.update_base()
 
         elif mod =='0': # остановка процесса
             break 
