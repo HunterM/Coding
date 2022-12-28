@@ -9,7 +9,8 @@ data = requests.get('https://www.cbr-xml-daily.ru/daily_json.js').json()
 USD = f"{data['Valute']['USD']['Value']}, {data['Valute']['USD']['Name']}"
 EUR = f"{data['Valute']['EUR']['Value']}, {data['Valute']['EUR']['Name']}"
 CNY = f"{data['Valute']['CNY']['Value']}, {data['Valute']['CNY']['Name']}"
-#/start - выбор валют - вводит сумму в рублях 
+
+
 @bot.message_handler(content_types=['text']) 
 def start(message):
         if message.text == '/start':
